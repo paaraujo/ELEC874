@@ -1,12 +1,5 @@
-# Import this module to automatically setup path to local airsim module
-# This module first tries to see if airsim module is installed via pip
-# If it does then we don't do anything else
-# Else we look up grand-parent folder to see if it has airsim folder
-#    and if it does then we add that in sys.path
-
 import os,sys,inspect,logging
 
-#this class simply tries to see if airsim 
 class SetupPath:
     @staticmethod
     def getDirLevels(path):
@@ -34,12 +27,6 @@ class SetupPath:
 
     @staticmethod
     def addAirSimModulePath():
-        # if airsim module is installed then don't do anything else
-        #import pkgutil
-        #airsim_loader = pkgutil.find_loader('airsim')
-        #if airsim_loader is not None:
-        #    return
-
         parent = SetupPath.getParentDir()
         if parent !=  '':
             airsim_path = os.path.join(parent, 'airsim')
