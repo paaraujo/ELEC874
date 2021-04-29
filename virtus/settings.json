@@ -1,0 +1,90 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "Car",
+  "Vehicles": {
+    "PhysXCar": {
+      "VehicleType": "PhysXCar",
+      "DefaultVehicleState": "",
+      "AutoCreate": true,
+      "PawnPath": "",
+      "EnableCollisionPassthrogh": false,
+      "EnableCollisions": true,
+      "RC": {
+        "RemoteControlID": -1
+      },
+      "Cameras": {   
+        "myLeftCam": {
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 1241,
+              "Height": 376,
+              "FOV_Degrees": 90,
+              "AutoExposureSpeed": 100,
+              "AutoExposureBias": 0,
+              "AutoExposureMaxBrightness": 0.64,
+              "AutoExposureMinBrightness": 0.03,
+              "MotionBlurAmount": 0,
+              "TargetGamma": 0.85,
+              "ProjectionMode": "",
+              "OrthoWidth": 5.12
+            }
+          ],
+          "X": 0, "Y": -0.06, "Z": -1.65,
+		      "Pitch": 0, "Roll": 0, "Yaw": 0
+        },
+        "myRightCam": {
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 1241,
+              "Height": 376,
+              "FOV_Degrees": 90,
+              "AutoExposureSpeed": 100,
+              "AutoExposureBias": 0,
+              "AutoExposureMaxBrightness": 0.64,
+              "AutoExposureMinBrightness": 0.03,
+              "MotionBlurAmount": 0,
+              "TargetGamma": 0.85,
+              "ProjectionMode": "",
+              "OrthoWidth": 5.12
+            }
+          ],
+          "X": 0, "Y": 0.48, "Z": -1.65,
+		      "Pitch": 0, "Roll": 0, "Yaw": 0
+        }
+      }
+    }
+  },
+  "SubWindows": [
+	  {"WindowID": 0, "ImageType": 0, "CameraName": "myLeftCam", "Visible": false},
+    {"WindowID": 1, "ImageType": 0, "CameraName": "myRightCam", "Visible": false}
+  ],
+  "Recording": {
+    "RecordOnMove": false,
+    "RecordInterval": 0.1,
+    "Cameras": [
+      { "CameraName": "myLeftCam", "ImageType": 0, "PixelsAsFloat": false, "Compress": true },
+      { "CameraName": "myRightCam", "ImageType": 0, "PixelsAsFloat": false, "Compress": true }
+    ]
+  },
+  "CameraDefaults": {
+    "CaptureSettings": [
+      {
+        "ImageType": 0,
+        "Width": 1241,
+        "Height": 376,
+        "FOV_Degrees": 90,
+        "AutoExposureSpeed": 100,
+        "AutoExposureBias": 0,
+        "AutoExposureMaxBrightness": 0.64,
+        "AutoExposureMinBrightness": 0.03,
+        "MotionBlurAmount": 0,
+        "TargetGamma": 1.0,
+        "ProjectionMode": "",
+        "OrthoWidth": 5.12
+      }
+    ]
+  }
+}
